@@ -20,7 +20,7 @@ const HomeContent = () => {
             online presence and drive success. From innovative website
             development and seamless e-commerce solutions to result-oriented
             digital marketing strategies, we provide the tools you need to
-            thrive in today's competitive market. Welcome to a world where your
+            thrive in today is competitive market. Welcome to a world where your
             digital dreams become reality!
           </p>
           <button className="contact-btn">

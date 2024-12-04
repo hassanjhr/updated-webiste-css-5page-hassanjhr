@@ -30,7 +30,7 @@ const Service = () => {
             <div className="service-card">
               <h3>SEO (Search Engine Optimization)</h3>
               <p>
-                Enhance your website's ranking on search engines. We use
+                Enhance your website is ranking on search engines. We use
                 advanced SEO techniques to ensure your site gets the visibility
                 it deserves, bringing in organic traffic.
               </p>
