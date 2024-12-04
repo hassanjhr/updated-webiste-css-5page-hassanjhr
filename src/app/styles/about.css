@@ -1,0 +1,97 @@
+.About1 {
+    background-image: url('../assets/digi.png'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 120vh; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    color: white; 
+    position: relative; 
+  }
+
+  .About1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  
+  .About1-content {
+    position: relative; 
+    z-index: 2;
+    max-width: 600px;
+    padding: 20px;
+  }
+  
+  /* Heading */
+  .fade-in {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+ 
+  .About1-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+
+  .contact-btn {
+    background-color: #ff7613;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    
+  }
+  
+  .contact-btn:hover {
+    background-color: #e85e0c; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+  }
+  
+ 
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .About{
+        height: 80vh;
+        padding: 20px;
+        /* text-align: center; */
+    }
+    
+    .fade-in {
+      font-size: 2rem;
+    }
+  
+    .hero-content p {
+      font-size: 1rem;
+    }
+  
+    .contact-btn {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+    }
+  }

@@ -1,0 +1,115 @@
+/* Contact Section */
+.Contact {
+    background-image: url('../assets/digi.png'); /* Add the correct relative path to the image */
+    background-size: cover; /* Ensures the background covers the area but might crop */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Ensures no repeat */
+    height: 120vh; /* Full height of the viewport */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    text-align: center; /* Center the text */
+    color: white; /* White text for better contrast */
+    position: relative; /* To layer text above image */
+  }
+  
+.Contact::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+  .contact-form-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+    text-align: left;
+  }
+  
+  
+  .contact-form-container h2 {
+    color: #333; 
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  /* Label Styling */
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+    text-align: left; 
+  }
+  
+  /* Input Fields and Textarea */
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    outline: none;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    border-color: #ff7613;
+    box-shadow: 0 0 5px rgba(255, 118, 19, 0.5);
+  }
+  
+  /* Submit Button */
+  .submit-btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2rem;
+    background-color: #ff7613;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: #e85e0c;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .Contact{
+        height: 80vh;
+        padding: 20px;
+        /* text-align: center; */
+    }
+
+    .contact-form-container {
+      padding: 20px;
+    }
+  
+    .submit-btn {
+      font-size: 1rem;
+      padding: 12px;
+    }
+  }
+  

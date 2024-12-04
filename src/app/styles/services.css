@@ -1,0 +1,165 @@
+/* Hero Section with Background */
+.Services {
+    background-image: url('../assets/digi.png'); /* Add the correct relative path to the image */
+    background-size: cover; /* Ensures the background covers the area but might crop */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Ensures no repeat */
+    height: 100vh; /* Full height of the viewport */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    text-align: center; /* Center the text */
+    color: white; /* White text for better contrast */
+    position: relative; /* To layer text above the image */
+    padding: 20px; /* Adds padding for smaller screens */
+  }
+  
+  .Services::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 1; /* Keeps overlay behind the content */
+  }
+  
+  /* Service Container */
+  .service-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 1200px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+    text-align: center;
+  }
+  
+  /* Heading */
+  .service-container h2 {
+    color: #333;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+  
+  /* Services Cards Layout */
+  .services-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns for large screens */
+    gap: 20px;
+  }
+  
+  .service-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures button stays at the bottom */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%; /* Ensures consistent card height */
+  }
+  
+  .service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .service-card h3 {
+    color: #ff7613;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .service-card p {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  /* Hide Paragraphs on Small Screens */
+  @media (max-width: 768px) {
+    .service-card p {
+      display: none; /* Hides paragraphs on small screens */
+    }
+  }
+  
+  /* Explore More Button */
+  .explore-btn {
+    padding: 12px 20px;
+    font-size: 1rem;
+    background-color: #ff7613;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    align-self: center;
+    margin-top: auto;
+  }
+  
+  .explore-btn:hover {
+    background-color: #e85e0c;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Responsive Styles */
+  
+  /* For large tablets and smaller desktops */
+  @media (max-width: 1024px) {
+    .services-cards {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+    }
+  }
+  
+  /* For tablets and larger mobile devices */
+  @media (max-width: 768px) {
+    .hero {
+      height: auto; /* Adjusts height for smaller screens */
+      padding: 20px; /* Adds padding for smaller screens */
+    }
+  
+    .services-cards {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns */
+      gap: 15px;
+    }
+  
+    .service-container {
+      padding: 20px;
+    }
+  
+    .service-card h3 {
+      font-size: 1.3rem;
+    }
+  }
+  
+  /* For mobile devices */
+  @media (max-width: 640px) {
+    .services-cards {
+      grid-template-columns: 1fr; /* Single column for mobile */
+    }
+  
+    .service-card {
+      width: 95%;
+      padding: 10px;
+      margin: 10px auto;
+    }
+  
+    .service-card h3 {
+      font-size: 1.2rem;
+    }
+  
+    .explore-btn {
+      padding: 10px 15px;
+      font-size: 0.9rem;
+    }
+  }
+  

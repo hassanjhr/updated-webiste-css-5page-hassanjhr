@@ -1,0 +1,112 @@
+
+.header {
+  background-color: #1e293b;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  color: white;
+}
+
+nav {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+a {
+  color: white;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #ff7613;
+}
+
+
+.text {
+  width: 300px;
+  height: 40px;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.text:focus {
+  border-color: #ff7613;
+  box-shadow: 0 0 5px #ff7613;
+}
+
+.search-btn {
+  height: 40px;
+  padding: 0 20px;
+  background-color: #324461;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.search-btn:hover {
+  color: #ff7613;
+}
+
+.search-bar {
+  display: flex;
+  gap: 5px;
+}
+
+@media (max-width: 1024px) {
+  .search-bar {
+    display: none;
+  }
+}
+
+/* Responsive Styles for Navbar */
+@media (max-width: 768px) {
+  .header {
+    /* flex-direction: column; */
+    text-align: center;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    background-color: #1e293b;
+    padding: 20px;
+    width: 100%;
+  }
+
+  .nav-menu.open {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+  }
+
+  .line {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+  }
+}
