@@ -1,5 +1,5 @@
-import Digi from "@/app/assets/digi.png"; // Importing the image
-import "@/app/styles/about.css"; // Importing the CSS file
+import Digi from "@/app/assets/digi.png";
+import "@/app/styles/about.css";
 import Link from "next/link";
 
 
@@ -9,7 +9,7 @@ const About = () => {
       <section
         className="About1"
         style={{
-          backgroundImage: `url(${Digi.src})`, // Adding background image
+          backgroundImage: `url(${Digi.src})`, 
         }}
       >
         <div className="About1-content">

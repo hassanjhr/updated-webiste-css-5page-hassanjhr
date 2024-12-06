@@ -1,16 +1,16 @@
-/* Contact Section */
+
 .Contact {
-    background-image: url('../assets/digi.png'); /* Add the correct relative path to the image */
-    background-size: cover; /* Ensures the background covers the area but might crop */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Ensures no repeat */
-    height: 120vh; /* Full height of the viewport */
+    background-image: url('../assets/digi.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 120vh;
     display: flex;
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
-    text-align: center; /* Center the text */
-    color: white; /* White text for better contrast */
-    position: relative; /* To layer text above image */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
   }
   
 .Contact::before {
@@ -50,7 +50,7 @@
     margin-bottom: 15px;
   }
   
-  /* Label Styling */
+
   .form-group label {
     display: block;
     font-weight: bold;
@@ -59,7 +59,7 @@
     text-align: left; 
   }
   
-  /* Input Fields and Textarea */
+
   .form-group input,
   .form-group textarea {
     width: 100%;
@@ -77,7 +77,7 @@
     box-shadow: 0 0 5px rgba(255, 118, 19, 0.5);
   }
   
-  /* Submit Button */
+ 
   .submit-btn {
     width: 100%;
     padding: 15px;

@@ -1,17 +1,17 @@
-/* Hero Section with Background */
+
 .Services {
-    background-image: url('../assets/digi.png'); /* Add the correct relative path to the image */
-    background-size: cover; /* Ensures the background covers the area but might crop */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Ensures no repeat */
-    height: 100vh; /* Full height of the viewport */
+    background-image: url('../assets/digi.png'); 
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 100vh; 
     display: flex;
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
-    text-align: center; /* Center the text */
-    color: white; /* White text for better contrast */
-    position: relative; /* To layer text above the image */
-    padding: 20px; /* Adds padding for smaller screens */
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    color: white; 
+    position: relative; 
+    padding: 20px; 
   }
   
   .Services::before {
@@ -21,11 +21,11 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
-    z-index: 1; /* Keeps overlay behind the content */
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 1; 
   }
   
-  /* Service Container */
+  
   .service-container {
     background-color: white;
     padding: 30px;
@@ -38,7 +38,7 @@
     text-align: center;
   }
   
-  /* Heading */
+
   .service-container h2 {
     color: #333;
     font-size: 2.5rem;
@@ -46,10 +46,10 @@
     margin-bottom: 40px;
   }
   
-  /* Services Cards Layout */
+  
   .services-cards {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columns for large screens */
+    grid-template-columns: repeat(4, 1fr); 
     gap: 20px;
   }
   
@@ -61,9 +61,9 @@
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Ensures button stays at the bottom */
+    justify-content: space-between; 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    height: 100%; /* Ensures consistent card height */
+    height: 100%; 
   }
   
   .service-card:hover {
@@ -88,11 +88,11 @@
   /* Hide Paragraphs on Small Screens */
   @media (max-width: 768px) {
     .service-card p {
-      display: none; /* Hides paragraphs on small screens */
+      display: none; 
     }
   }
   
-  /* Explore More Button */
+  
   .explore-btn {
     padding: 12px 20px;
     font-size: 1rem;
@@ -116,19 +116,19 @@
   /* For large tablets and smaller desktops */
   @media (max-width: 1024px) {
     .services-cards {
-      grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+      grid-template-columns: repeat(2, 1fr); 
     }
   }
   
   /* For tablets and larger mobile devices */
   @media (max-width: 768px) {
     .hero {
-      height: auto; /* Adjusts height for smaller screens */
-      padding: 20px; /* Adds padding for smaller screens */
+      height: auto; 
+      padding: 20px; 
     }
   
     .services-cards {
-      grid-template-columns: repeat(2, 1fr); /* 2 columns */
+      grid-template-columns: repeat(2, 1fr); 
       gap: 15px;
     }
   
@@ -144,7 +144,7 @@
   /* For mobile devices */
   @media (max-width: 640px) {
     .services-cards {
-      grid-template-columns: 1fr; /* Single column for mobile */
+      grid-template-columns: 1fr; 
     }
   
     .service-card {
